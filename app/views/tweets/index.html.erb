@@ -1,0 +1,6 @@
+<h2><%= link_to "新しいTweet","new" %></h2>
+
+<% @tweets.each do |tweet| %>
+    <h1><%= tweet.title %></h1>
+    <p><%= tweet.content %></p>
+<% end %>
